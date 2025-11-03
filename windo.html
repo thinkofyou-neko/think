@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/310cc39efe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Lilita+One&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: "Jersey 10", sans-serif;
+        }
+
+        .yesdotted1:hover > p {
+            color: #ff4388;
+            cursor: pointer;
+        }
+
+        .yesdotted2:hover > p {
+            color: #ff4388;
+            cursor: pointer;
+        }
+        .main {
+            max-width: 360px;
+            min-height: 180px;
+            margin: 0 auto;
+        }
+        .main_body {
+            position: relative;
+        }
+        .answer_body {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main_body" style="min-width: 360px; max-width: 360px; min-height: 180px; background-color: #ffe2e7; border-right: 2px solid #333; border-bottom: 2px solid #333; border-left: 2px solid #eee; border-top: 2px solid #eee; margin: 0 auto; padding: 3px; box-sizing: border-box;">
+            <div class="main_header" style="width: 100%; height: 30px; background-color: #ff4388; display: flex; justify-content: space-between; align-items: center;">
+                <p style="color: #fff; margin: 0; padding-left: 5px; line-height: 28px; font-size: 16px; text-indent: 5px; letter-spacing: 5px;">RIKU</p>
+                <p style="width: 20px; height: 19px; margin-right: 5px; background-color: #ffe2e7; border-top: 1px solid #eee; border-left: 1px solid #eee; border-bottom: 1px solid #333; border-right: 1px solid #333; text-align: center; color: rgb(239, 142, 158); line-height: 21px; font-size: 13px;">Ｘ</p>
+            </div>
+
+            <div class="conetnt" style="height: 100px; display: flex; align-items: center; justify-content: space-evenly;">
+                <p class="warning" style="color: #ff4388; font-size: 45px; text-shadow: 5px 3px 1px #333; text-align: center; display: inline; float: left; flex: 1;"><i class="fa-solid fa-triangle-exclamation"></i></p>
+                <div class="textarea" style=" text-align: left; float: right; display: inline; flex: 2;">
+                    <p class="text" style="line-height: 10px; font-size: 21px; letter-spacing: 3px;">Do you <b style="color: #ff4388;">love</b> me?</p>
+                    <p class="emoji" style="line-height: 10px;">૮ - ﻌ • ა <b style="color: #ff4388;">♥</b></p>
+                </div>
+            </div>
+
+            <div class="button_area" style="display: flex; justify-content: space-evenly; align-items: center;">
+                <div class="yesbtn1"
+                onclick="document.getElementById('answer_body1').style.display='block';"
+                style="width: 80px; height: 25px; border: 1px solid #333; box-shadow: 1px 1px #333; display: flex; align-items: center; justify-content: center;">
+                    <div class="yesdotted1" style="width: 74px; height: 19px; border: 1px dotted #333;">
+                        <p style="text-align: center; line-height: 19px; font-size: 14px; letter-spacing: 3px; margin: 0;">YES</p>
+                    </div>
+                </div>
+                <div class="yesbtn2"
+                onclick="document.getElementById('answer_body2').style.display='block';"
+                style="width: 80px; height: 25px; border: 1px solid #333; box-shadow: 1px 1px #333; display: flex; align-items: center; justify-content: center;">
+                    <div class="yesdotted2" style="width: 74px; height: 19px; border: 1px dotted #333;">
+                        <p style="text-align: center; line-height: 19px; font-size: 14px; letter-spacing: 3px; margin: 0;">NO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="answer_body1" class="answer_body" style="min-width: 360px; max-width: 360px; min-height: 180px; background-color: #ffe2e7; border-right: 2px solid #333; border-bottom: 2px solid #333; border-left: 2px solid #eee; border-top: 2px solid #eee; margin: 0 auto; padding: 3px; box-sizing: border-box;">
+                <div class="main_header" style="width: 100%; height: 30px; background-color: #ff4388; display: flex; justify-content: space-between; align-items: center;">
+                    <p style="color: #fff; margin: 0; padding-left: 5px; line-height: 28px; font-size: 16px; text-indent: 5px; letter-spacing: 5px;">RIKU</p>
+                    <p
+                    onclick="document.getElementById('answer_body1').style.display='none';"
+                    style="width: 20px; height: 19px; margin-right: 5px; background-color: #ffe2e7; border-top: 1px solid #eee; border-left: 1px solid #eee; border-bottom: 1px solid #333; border-right: 1px solid #333; text-align: center; color: rgb(239, 142, 158); line-height: 21px; font-size: 13px; cursor: pointer;">Ｘ</p>
+                </div>
+
+                <div class="conetnt" style="height: 140px; display: flex; align-items: center; justify-content: space-evenly;">
+                    <p class="answer" style="line-height: 140px; font-size: 21px; letter-sacing: 3px;">I Love you too neko<b style="color: #ff4388;"> ♥</b></p>
+                </div>
+            </div>
+            <div id="answer_body2" class="answer_body" style="min-width: 360px; max-width: 360px; min-height: 180px; background-color: #ffe2e7; border-right: 2px solid #333; border-bottom: 2px solid #333; border-left: 2px solid #eee; border-top: 2px solid #eee; margin: 0 auto; padding: 3px; box-sizing: border-box;">
+                <div class="main_header" style="width: 100%; height: 30px; background-color: #ff4388; display: flex; justify-content: space-between; align-items: center;">
+                    <p style="color: #fff; margin: 0; padding-left: 5px; line-height: 28px; font-size: 16px; text-indent: 5px; letter-spacing: 5px;">RIKU</p>
+                    <p
+                    onclick="document.getElementById('answer_body2').style.display='none';"
+                    style="width: 20px; height: 19px; margin-right: 5px; background-color: #ffe2e7; border-top: 1px solid #eee; border-left: 1px solid #eee; border-bottom: 1px solid #333; border-right: 1px solid #333; text-align: center; color: rgb(239, 142, 158); line-height: 21px; font-size: 13px; cursor: pointer;">Ｘ</p>
+                </div>
+
+                <div class="conetnt" style="height: 140px; display: flex; align-items: center; justify-content: space-evenly;">
+                    <p class="answer" style="line-height: 140px; font-size: 21px; letter-spacing: 3px;">Why? I'm so sad<b style="color: #ff4388; font-size: 12px;"> ㅠ.ㅜ</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
